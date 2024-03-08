@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Madimi+One&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https: //fonts.googleapis.com/css2?family=Anta&family=Madimi+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">      
+        <section>
+            <h1 class= "iceland-regular">ENCR1P74D0R D3 T3X70</h1>
+            <textarea class= "anta-regular" id="inputText" placeholder="Ingresa el texto..." oninput="validarTexto()"></textarea>
+            <span id="mensajeError" style="color: red;"></span>
+            <button onclick="encriptar()">Encriptar</button>
+            <button onclick="desEncriptar()">Desencriptar</button>
+        </section>
+        <section>
+            <h1 class= "iceland-regular">Cifrado</h1>
+            <textarea class= "anta-regular" id="outputText" placeholder="Texto encriptado..." disabled></textarea>
+            <button onclick="copy()">Copiar</button>
+            <button onclick="reset()">Reset</button>
+        </section>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
